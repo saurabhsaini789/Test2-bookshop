@@ -23,7 +23,7 @@ export const About: React.FC = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-accent rounded-2xl transform translate-x-4 translate-y-4 opacity-50 transition-transform group-hover:translate-x-6 group-hover:translate-y-6 duration-500"></div>
                             <img
-                                src="/images/about/grandfather.jpg"
+                                src={`${import.meta.env.BASE_URL}images/about/grandfather.jpg`}
                                 alt="Our Grandfather - The Foundation"
                                 className="relative rounded-2xl shadow-xl mt-4 ml-4 md:mt-0 md:ml-0 border-4 border-white object-cover w-full max-w-md aspect-[3/4] transition-all duration-500 sepia-[0.1]"
                             />
@@ -80,7 +80,7 @@ export const About: React.FC = () => {
                         </div>
                         <div className="relative overflow-hidden min-h-[400px] h-full lg:order-last order-first">
                             <img
-                                src="/images/about/father.jpg"
+                                src={`${import.meta.env.BASE_URL}images/about/father.jpg`}
                                 alt="Our Father in the shop"
                                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
