@@ -100,9 +100,9 @@ export const FreeBooks: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* RIGHT COLUMN -> Sticky Sidebar */}
-                    <div className="lg:col-span-4">
-                        <div className="sticky top-28 max-h-[calc(100vh-7rem)] overflow-y-auto pr-2 pb-8 space-y-6">
+                    {/* RIGHT COLUMN -> Sidebar */}
+                    <div className="lg:col-span-4 h-full relative">
+                        <div className="flex flex-col gap-6 h-full">
 
                             {/* Book of the Week */}
                             <div className="bg-white p-6 rounded-xl border-t-4 border-t-accent border-x border-b border-gray-200 shadow-md">
@@ -154,7 +154,7 @@ export const FreeBooks: React.FC = () => {
                             </div>
 
                             {/* CTA Conversion Box */}
-                            <div className="bg-secondary p-6 rounded-xl border border-primary/20 shadow-sm text-center">
+                            <div className="sticky top-32 mt-auto bg-secondary p-6 rounded-xl border border-primary/20 shadow-sm text-center">
                                 <h3 className="font-heading font-bold text-lg text-primary mb-2">Need Guidance?</h3>
                                 <p className="text-sm text-gray-700 mb-5">
                                     Need help choosing the right books for your child or exam preparation? Message us for personalized recommendations.
