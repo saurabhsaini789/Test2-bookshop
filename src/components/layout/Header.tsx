@@ -51,7 +51,7 @@ export const Header: React.FC = () => {
                     </div>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden lg:flex space-x-8">
+                    <nav className="hidden xl:flex space-x-8">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}
@@ -63,8 +63,8 @@ export const Header: React.FC = () => {
                         ))}
                     </nav>
 
-                    {/* Mobile Menu Button */}
-                    <div className="flex items-center lg:hidden">
+                    {/* Mobile/Tablet Menu Button */}
+                    <div className="flex items-center xl:hidden">
                         <button
                             onClick={toggleMenu}
                             className="text-dark hover:text-primary focus:outline-none p-2"
@@ -76,9 +76,9 @@ export const Header: React.FC = () => {
                 </div>
             </div>
 
-            {/* Mobile Nav */}
+            {/* Mobile/Tablet Nav */}
             {isMenuOpen && (
-                <div className="lg:hidden absolute top-full left-0 w-full bg-secondary shadow-lg border-b border-primary/10">
+                <div className="xl:hidden absolute top-full left-0 w-full bg-secondary shadow-lg border-b border-primary/10">
                     <div className="px-4 pt-2 pb-4 space-y-1">
                         {navLinks.map((link) => (
                             <Link
