@@ -12,6 +12,7 @@ export const Header: React.FC = () => {
         { name: 'School Books', path: '/category/school-books' },
         { name: 'Competitive Exams', path: '/category/competitive-exams' },
         { name: 'Stationery', path: '/category/stationery' },
+        { name: 'Free Books & Learning', path: '/free-books' },
         { name: 'Services', path: '/services' },
         { name: 'About Us', path: '/about' },
         { name: 'Contact', path: '/contact' },
