@@ -102,7 +102,7 @@ export const FreeBooks: React.FC = () => {
 
                     {/* RIGHT COLUMN -> Sticky Sidebar */}
                     <div className="lg:col-span-4">
-                        <div className="sticky top-28 space-y-6">
+                        <div className="sticky top-28 max-h-[calc(100vh-7rem)] overflow-y-auto pr-2 pb-8 space-y-6">
 
                             {/* Book of the Week */}
                             <div className="bg-white p-6 rounded-xl border-t-4 border-t-accent border-x border-b border-gray-200 shadow-md">
@@ -187,21 +187,6 @@ export const FreeBooks: React.FC = () => {
                 </div>
             </div>
 
-            {/* Floating WhatsApp Lead Strategy - specific to this page */}
-            <div className="fixed bottom-24 right-6 md:bottom-6 md:left-6 md:right-auto z-50 flex flex-col items-end md:items-start gap-2 animate-fade-in-up">
-                <div className="bg-white px-3 py-2 rounded-lg shadow-lg border border-primary/10 text-xs font-semibold text-primary after:content-[''] after:absolute after:bottom-[-6px] after:right-6 md:after:left-6 md:after:right-auto after:border-t-8 after:border-t-white after:border-x-8 after:border-x-transparent shadow-xl">
-                    Free guidance for parents &amp; students ✨
-                </div>
-                <a
-                    href="https://wa.me/917419150418?text=Hello,%20I%20saw%20your%20Free%20Books%20%26%20Learning%20section.%20I%20need%20help%20selecting%20the%20right%20books."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#25D366] text-white p-3 md:p-4 rounded-full shadow-xl hover:bg-[#20bd5a] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center animate-bounce-slow"
-                    aria-label="Ask for guidance on WhatsApp"
-                >
-                    <MessageCircle size={24} className="md:w-7 md:h-7" />
-                </a>
-            </div>
 
         </div>
     );
